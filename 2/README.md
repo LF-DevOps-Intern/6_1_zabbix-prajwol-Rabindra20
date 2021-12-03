@@ -2,6 +2,7 @@
 - Running Zabbix Server service, 
 - Database config parameter in server config file
 - Server Dashboard
+<br/>
 Steps:<br/>
 Open webbrower and enter ip/zabbix/<br/>
 Then it will redirect to login page and use Admin as a user and zibbix as a password<br/>

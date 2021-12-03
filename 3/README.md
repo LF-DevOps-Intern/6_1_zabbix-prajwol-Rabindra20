@@ -5,6 +5,7 @@
 - Fetch those logs from the host (Make sure required permissions are set for zabbix-agent to
 pull logs)
 - Provide agent configuration file & screenshots for target machine graph & logs
+
 Steps:<br/>
 Install zabbix agent on same vm<br/>
 ```
@@ -47,6 +48,46 @@ Create host and Template<br/>
 Check running host<br/>
 
 ![run](https://user-images.githubusercontent.com/53372486/144251618-07e8c066-939d-4839-a04f-21967cafb61e.png)<br/>
+
+Add proxy
+click on administration > proxies > create proxy
+![proxy active](https://user-images.githubusercontent.com/53372486/144541192-67795f5c-a8c0-4a3a-825f-ffb43fa2adcc.png)<br/>
+
+Give promission to zabbix user<br/>
+```
+sudo usermod -aG adm zabbix
+```
+![usermod](https://user-images.githubusercontent.com/53372486/144541210-4cfdc1c8-e21a-4931-8bdd-f0b194e29c7b.png)<br/>
+
+Check zabbix user can access syslog<br/>
+```
+sudo -H -u zabbix bash -c 'tail -f /var/log/syslog'
+```
+![checking zabbix](https://user-images.githubusercontent.com/53372486/144541177-b9e3a2a0-a031-45c7-a121-e4d0a6de9abd.png)<br/>
+
+Fetch log<br/>
+click on configuration > item > create item<br/>
+
+![log](https://user-images.githubusercontent.com/53372486/144541185-03e1312b-ee30-474f-bf02-5b7e18449839.png)<br/>
+
+![syslogall](https://user-images.githubusercontent.com/53372486/144546424-92246990-a878-4249-82cc-68455d2465e8.png)<br/>
+
+Check log data <br/>
+Click on monitring > Latest data > syslog or log (find item name)<br/>
+
+![run](https://user-images.githubusercontent.com/53372486/144251618-07e8c066-939d-4839-a04f-21967cafb61e.png)<br/>
+
+Click on history<br/>
+For syslog all data<br/>
+
+![history](https://user-images.githubusercontent.com/53372486/144546457-f152a4f4-3961-458a-a5f0-571943ac7758.png)<br/>
+
+For error and alert log of syslog<br/>
+
+![syslog](https://user-images.githubusercontent.com/53372486/144546447-bb4e89b5-4a96-42c4-a0be-93bf632f8492.png)<br/>
+
+![syslog alert](https://user-images.githubusercontent.com/53372486/144546503-615e1d4d-6b19-49c8-85ab-a9ce3f88fdaa.png)<br/>
+
 
 
 

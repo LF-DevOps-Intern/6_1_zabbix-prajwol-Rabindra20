@@ -5,6 +5,7 @@
 - PHP
 - Zabbix Server-Modules for Apache & Database
 - Zabbix Fronted
+<br/>
 Steps:<br/>
 Installing the Zabbix Server<br/>
 Download and install the repository configuration package<br/>
