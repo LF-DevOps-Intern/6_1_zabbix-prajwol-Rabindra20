@@ -88,6 +88,12 @@ For error and alert log of syslog<br/>
 
 ![syslog alert](https://user-images.githubusercontent.com/53372486/144546503-615e1d4d-6b19-49c8-85ab-a9ce3f88fdaa.png)<br/>
 
+Graph<br/>
+![graph](https://user-images.githubusercontent.com/53372486/144548213-d41a174a-9db4-422d-bfe1-669a7fcd66e3.png)<br/>
+
+![graph2](https://user-images.githubusercontent.com/53372486/144548214-5572d159-2384-4228-b858-05af32cd1591.png)<br/>
+
+![graph3](https://user-images.githubusercontent.com/53372486/144548216-fb9018f8-b46b-4370-b20f-9c3e71677014.png)<br/>
 
 
 
